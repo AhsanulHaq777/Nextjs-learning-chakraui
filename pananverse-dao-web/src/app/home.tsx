@@ -1,5 +1,6 @@
 "use client"
-import {Box,Grid, Flex, Spacer, Center,Text, Image, Button, Heading, GridItem, Container, SimpleGrid} from '@chakra-ui/react'
+import {Box,Grid, Card, CardBody, CardHeader, CardFooter, Flex, Spacer, Center,Text, Image, Button, Heading, GridItem, Container, SimpleGrid} from '@chakra-ui/react'
+import Link from 'next/link'
 import Images from 'next/image'
 
 
@@ -66,6 +67,63 @@ export default function MainPage(){
                     </SimpleGrid>
                 </Container>
             </Box>
+            <Box>
+                <Container maxW={1200} p={{lg:'50px',md:'35px',base:'20'}}>
+                    <Box textAlign='center'>
+                    <Heading mt={{lg:'60px',md:'45px', base:'30px'}} color='#FCDC3E' fontFamily='mina' fontWeight='800' fontSize='35px' letterSpacing='0.03em'>Our Cources</Heading>
+                    </Box>
+                    <SimpleGrid mt={{lg:'50px',md:'30px',base:'15px'}} gap={{lg:'20px',md:'15px',base:'10px'}} gridTemplateColumns={{lg:'repeat(4,1fr)',md:'repeat(2,1fr)',base:'repeat(1,1fr)'}}>
+                        <Card align='center' bg='#006450' color='#FCDC3E' shadow='2xl'>
+                            <CardHeader>
+                                <Heading size='md'> Web 3.0 & Metaverse</Heading>
+                            </CardHeader>
+                            <CardBody>
+                                <Text>View a summary of all your customers over the last month.</Text>
+                            </CardBody>
+                            <CardFooter>
+                                <Link href='/'><Button colorScheme='#FCDC3E' variant='outline' _hover={{ bg: "#FCDC3E", color: "#006450" }} _focus={{ boxShadow: "outline" }} >Explore</Button></Link>
+                            </CardFooter>
+                        </Card>
+                        <Card align='center' bg='#FCDC3E' color='#006450' shadow='2xl'>
+                            <CardHeader>
+                                <Heading size='md'> BlockChain</Heading>
+                            </CardHeader>
+                            <CardBody>
+                                <Text>View a summary of all your customers over the last month.</Text>
+                            </CardBody>
+                            <CardFooter>
+                                <Link href='/'><Button colorScheme='#FCDC3E' variant='outline' _hover={{ bg: "#006450", color: "#FCDC3E" }} _focus={{ boxShadow: "outline" }}>Explore</Button></Link>
+                            </CardFooter>
+                        </Card>
+                        <Card align='center' bg='#006450' color='#FCDC3E' shadow='2xl'>
+                            <CardHeader>
+                                <Heading size='md'> Artificail Intelligence</Heading>
+                            </CardHeader>
+                            <CardBody>
+                                <Text>View a summary of all your customers over the last month.</Text>
+                            </CardBody>
+                            <CardFooter>
+                                <Link href='/'><Button colorScheme='#FCDC3E' variant='outline' _hover={{ bg: "#FCDC3E", color: "#006450" }} _focus={{ boxShadow: "outline" }}>Explore</Button></Link>
+                            </CardFooter>
+                        </Card>
+                        <Card align='center' bg='#FCDC3E' color='#006450' shadow='2xl'>
+                            <CardHeader>
+                                <Heading size='md'> Cloud Computing</Heading>
+                            </CardHeader>
+                            <CardBody>
+                                <Text>View a summary of all your customers over the last month.</Text>
+                            </CardBody>
+                            <CardFooter>
+                                <Link href='/'><Button colorScheme='#FCDC3E' variant='outline' _hover={{ bg: "#006450", color: "#FCDC3E" }} _focus={{ boxShadow: "outline" }}>Explore</Button></Link>
+                            </CardFooter>
+                        </Card>
+                    </SimpleGrid>
+                </Container>
+            </Box>
+
+
+
+
             {/* <Grid  
                     bg='#FCDC3E'
                     color='#006450'
