@@ -1,5 +1,7 @@
 "use client"
 import ChakraWrapper from "@/components/chakraWrapper"
+import Footer from "@/components/footer"
+import Header from "@/components/header"
 export default function RootLayout({
   children,
 }: {
@@ -8,7 +10,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body><ChakraWrapper>{children}</ChakraWrapper></body>
+      
+      <body>
+        <ChakraWrapper>
+          <Header />
+          {children}
+          <Footer />
+        </ChakraWrapper>
+      </body>
     </html>
   )
 }
