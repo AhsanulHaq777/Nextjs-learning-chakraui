@@ -16,9 +16,9 @@ export default function Header() {
           </Box>
           <Flex display={{lg:'flex', md:'none', base:'none'}} placeItems='center' color='#FCDC3E' fontWeight='semibold' fontSize={18} gap={8}>
             <Link href='/'>Home</Link>
-            <Link href='/'>Cources</Link>
+            <Link href='course'>Cources</Link>
             <Link href='about'>About</Link>
-            <Link href=''>Contact</Link>
+            <Link href='contact'>Contact</Link>
           </Flex>
           <Box display={{lg:'initial', md:'none', base:'none'}} mt='21px' color='#FCDC3E' >
             <Button colorScheme='#FCDC3E' variant='outline' float='right'_hover={{ bg: "#FCDC3E", color: "#006450" }} _focus={{ boxShadow: "outline" }}>Get Enrolled</Button>

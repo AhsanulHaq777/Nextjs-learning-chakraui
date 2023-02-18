@@ -30,14 +30,14 @@ import Link from 'next/link';
             <Grid >
               <Heading fontSize='lg' mb='20px'>Services</Heading>
               <Link href='about'>About us</Link>
-              <Link href=''>Cources</Link>
+              <Link href='course'>Cources</Link>
               <Link href=''>Others</Link>
             </Grid>
           </Box>
           <Box textAlign={{base:'center',md:'initial',lg:'initial'}}>
             <Grid>
               <Heading fontSize='lg' mb='20px'>Company</Heading>
-              <Link href=''>Contac Us</Link>
+              <Link href='contact'>Contac Us</Link>
               <Link href=''>Terms of Use</Link>
               <Link href=''>Help</Link>
             </Grid>
