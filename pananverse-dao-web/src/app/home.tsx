@@ -49,10 +49,9 @@ export default function MainPage(){
                 <Container maxW='full' p={{lg:'50px',md:'35px',base:'20'}}>
                         <Box textAlign='center'>
                             <Heading mt={{lg:'60px',md:'45px', base:'30px'}} fontFamily='mina' fontWeight='800' fontSize='50px'>
-                                <Highlight query='Earn while you learn' styles={{ px: '2', py: '2', bg: 'red.500' ,color:'#FCDC3E' }}>
-                                    Program is a nutshell: Earn while you learn
-                                    {/* <i className={style.earn}>Earn while you learn</i> */}
-                                </Highlight>
+                                {/* <Highlight query='Earn while you learn' styles={{ px: '2', py: '2', bg: 'red.500' ,color:'#FCDC3E' }}> */}
+                                    Program is a nutshell: <span className={style.earn}>Earn while you learn</span>
+                                {/* </Highlight> */}
                                 
                             </Heading>
                         </Box>
